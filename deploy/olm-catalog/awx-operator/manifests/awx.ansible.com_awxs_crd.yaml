@@ -31,6 +31,11 @@ spec:
               custom_awx_setting:
                 description: Setting that determines if a custom.py file should be mounted
                 type: boolean
+              custom_awx_settings:
+                description: Custom settings to be added to a custom.py
+                items:
+                  type: string
+                type: array
               tower_admin_email:
                 description: The admin user email
                 type: string
