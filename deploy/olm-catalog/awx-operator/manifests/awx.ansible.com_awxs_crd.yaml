@@ -28,6 +28,9 @@ spec:
               development_mode:
                 description: If the deployment should be done in development mode
                 type: boolean
+              custom_awx_setting:
+                description: Setting that determines if a custom.py file should be mounted
+                type: boolean
               tower_admin_email:
                 description: The admin user email
                 type: string

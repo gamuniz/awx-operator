@@ -78,6 +78,11 @@ spec:
               mountPath: "/var/run/awx-rsyslog"
             - name: rsyslog-dir
               mountPath: "/var/lib/awx/rsyslog"
+{% if custom_awx_setting %}
+            - name: custom-setting-path
+              mountPath: /etc/tower/conf.d/custom.py
+              subPath: custom.py
+{% endif %}
 {% if development_mode | bool %}
             - name: awx-devel
               mountPath: "/awx_devel"
