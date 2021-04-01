@@ -29,10 +29,15 @@ spec:
                 description: If the deployment should be done in development mode
                 type: boolean
               custom_awx_settings:
-                description: Custom settings to be added to a custom.py
-                items:
-                  type: string
-                type: array
+                  description: Customized settings to be placed in custom.py
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                      value:
+                        type: string
               tower_admin_email:
                 description: The admin user email
                 type: string

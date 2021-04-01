@@ -246,7 +246,12 @@ spec:
                   description: Customized settings to be placed in custom.py
                   type: array
                   items:
-                    type: string
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                      value:
+                        type: string
               type: object
             status:
               properties:
