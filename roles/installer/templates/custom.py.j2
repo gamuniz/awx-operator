@@ -1,1 +1,5 @@
-gabe = awesome
+{% if custom_awx_settings %}
+{% for key, value in custom_awx_settings.items() -%}
+{{ key }} = "{{ value }}"
+{% endfor %}
+{% endif %}

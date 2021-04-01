@@ -242,14 +242,11 @@ spec:
                 development_mode:
                   description: If the deployment should be done in development mode
                   type: boolean
-                custom_awx_setting:
-                  description: Setting that determines if a custom.py file should be mounted
-                  type: boolean
                 custom_awx_settings:
-                  description: List of key/value pair of configurations to be added to custom.py
+                  description: Customized settings to be placed in custom.py
                   type: array
                   items:
-                    type: string
+                    type: string 
               type: object
             status:
               properties:

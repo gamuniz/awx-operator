@@ -209,11 +209,6 @@ spec:
         x-descriptors:
         - urn:alm:descriptor:com.tectonic.ui:advanced
         - urn:alm:descriptor:com.tectonic.ui:booleanSwitch
-      - displayName: Configure the Deployment to use Custom File
-        path: custom_awx_setting
-        x-descriptors:
-        - urn:alm:descriptor:com.tectonic.ui:advanced
-        - urn:alm:descriptor:com.tectonic.ui:booleanSwitch 
       - displayName: Custom settings to configure
         path: custom_awx_settings
         x-descriptors:
