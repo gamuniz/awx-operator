@@ -22,6 +22,16 @@ spec:
               ca_trust_bundle:
                 description: Path where the trusted CA bundle is available
                 type: string
+              custom_awx_settings:
+                description: Customized default settings to be placed in custom.py
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    value:
+                      type: string 
               ldap_cacert_secret:
                  description: Secret where can be found the LDAP trusted Certificate Authority Bundle
                  type: string

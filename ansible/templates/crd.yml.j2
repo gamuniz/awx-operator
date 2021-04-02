@@ -245,6 +245,16 @@ spec:
                 ldap_cacert_secret:
                   description: Secret where can be found the LDAP trusted Certificate Authority Bundle
                   type: string
+                custom_awx_settings:
+                  description: Customized default settings to be placed in custom.py
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                      value:
+                        type: string
               type: object
             status:
               properties:

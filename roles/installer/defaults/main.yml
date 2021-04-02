@@ -128,3 +128,4 @@ ca_trust_bundle: "/etc/pki/tls/certs/ca-bundle.crt"
 ldap_cacert_secret: ''
 
 development_mode: false
+custom_awx_settings: ''

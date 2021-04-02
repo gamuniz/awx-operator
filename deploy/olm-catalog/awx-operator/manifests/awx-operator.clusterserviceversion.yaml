@@ -337,6 +337,11 @@ spec:
         path: towerImage
         x-descriptors:
         - urn:alm:descriptor:com.tectonic.ui:text
+      - displayName: Custom settings to configure
+        path: custom_awx_settings
+        x-descriptors:
+        - urn:alm:descriptor:com.tectonic.ui:advanced
+        - urn:alm:descriptor:com.tectonic.ui:hidden 
       version: v1beta1
   description: AWX operator
   displayName: AWX

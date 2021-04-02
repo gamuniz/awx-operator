@@ -1,0 +1,5 @@
+{% if custom_awx_settings %}
+{% for item in custom_awx_settings -%}
+{{ item.name }} = "{{ item.value }}"
+{% endfor %}
+{% endif %}

@@ -222,6 +222,10 @@ spec:
                 path: 'environment.sh'
               - key: ldap_py
                 path: 'ldap.py'
+{% if custom_awx_settings %}                
+              - key: custom_py
+                path: 'custom.py'
+{% endif %}
         - name: "{{ secret_key_secret_name }}"
           secret:
             secretName: '{{ secret_key_secret_name }}'
